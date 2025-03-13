@@ -1,20 +1,17 @@
 module.exports = {
+    root: true,
     env: {
-        browser: true,
-        es2021: true,
+      node: true,
     },
     extends: [
-        'eslint:recommended',
-        'plugin:vue/vue3-essential',
+      'plugin:vue/vue3-essential',
+      'eslint:recommended',
     ],
     parserOptions: {
-        ecmaVersion: 12,
-        sourceType: 'module',
+      parser: '@babel/eslint-parser',
     },
-    plugins: [
-        'vue',
-    ],
     rules: {
-        // Adicione regras personalizadas aqui, se necessário
+      'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+      'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     },
-};
+  };

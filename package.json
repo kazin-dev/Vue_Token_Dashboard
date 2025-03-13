@@ -3,13 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "serve": "vue-cli-service serve --no-eslint",
+    "build": "vue-cli-service build --no-eslint",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^1.8.3",
     "core-js": "^3.8.3",
-    "vue": "^3.2.13"
+    "json-server": "^1.0.0-beta.3",
+    "vue": "^3.2.13",
+    "vue-router": "^4.5.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -18,7 +21,8 @@
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
     "eslint": "^9.22.0",
-    "eslint-plugin-vue": "^10.0.0"
+    "eslint-plugin-vue": "^10.0.0",
+    "eslint-webpack-plugin": "^5.0.0"
   },
   "eslintConfig": {
     "root": true,
